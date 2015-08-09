@@ -1,8 +1,8 @@
-local hostname="[%{$fg[blue]%}%m%{$reset_color%}]"
+local hostname="[%{$fg[yellow]%}%m%{$reset_color%}]"
 local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$reset_color%}"
 
-PROMPT='${ret_status} $(git_prompt_info)%{$reset_color%}'
-RPROMPT='%{$fg[blue]%}%~%{$reset_color%} ${hostname}'
+PROMPT='${ret_status} %B%c%b $(git_prompt_info)%{$reset_color%}'
+RPROMPT='%{$fg[yellow]%}%~%{$reset_color%} ${hostname}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}git:(%{$fg[blue]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
