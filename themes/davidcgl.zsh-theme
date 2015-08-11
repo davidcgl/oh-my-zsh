@@ -1,6 +1,6 @@
 function vcs_prompt() {
-  if [[ ${PWD} = /google/src/cloud/${USER}/* ]]; then
-    local CLIENT=$(g4 client -o | grep ^Client: | cut -d ':' -f 3)
+  if [[ ${PWD} = /google/src/cloud/davidcgl/* ]]; then
+    local CLIENT=$(pwd | sed -E 's:^/google/src/cloud/davidcgl/([A-Za-z0-9_-]+).*:\1:g')
     echo "%B%{$fg[yellow]%}citc:(%{$fg[red]%}${CLIENT}%{$fg[yellow]%})%b"
   else
     git_prompt_info
