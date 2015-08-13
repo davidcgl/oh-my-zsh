@@ -7,7 +7,7 @@ function vcs_prompt() {
   fi
 }
 
-local HOSTNAME="%B[%{$fg_bold[red]%}%m%{$reset_color%}]%b"
+local HOSTNAME="%B[%{$fg_bold[red]%}%m%{$reset_color%}%B]%b"
 local RET_STATUS="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$reset_color%}"
 
 PROMPT='${RET_STATUS} %B%c%b $(vcs_prompt) '
