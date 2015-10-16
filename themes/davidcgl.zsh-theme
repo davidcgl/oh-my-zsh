@@ -11,7 +11,7 @@ local HOSTNAME="%B[%{$fg_bold[red]%}%m%{$reset_color%}%B]%b"
 local RET_STATUS="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$reset_color%}"
 
 PROMPT='${RET_STATUS} %B%c%b $(vcs_prompt) '
-RPROMPT='%{$reset_color%} %B%~%b ${HOSTNAME}'
+RPROMPT='%{$reset_color%} %B%~%b'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[yellow]%}git:(%{$fg_bold[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
